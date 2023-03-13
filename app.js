@@ -35,6 +35,9 @@ const year = futureDate.getFullYear();
 const hours = futureDate.getHours();
 // Extracting minutes
 const minutes = futureDate.getMinutes();
-console.log(minutes);
+// Extracting month index
+let month = futureDate.getMonth();
+console.log(month);
+
 // Displaying the dynamic date
 giveaway.textContent = `giveaway ends on ${year} ${hours}:${minutes}`;
