@@ -29,15 +29,20 @@ const items = document.querySelectorAll('.deadline-format h4');
 
 // Assigning the date
 let futureDate = new Date(2020, 4, 24, 11, 30, 0);
-// Extracting the year
+
+// Year
 const year = futureDate.getFullYear();
-// Extracting hours
-const hours = futureDate.getHours();
-// Extracting minutes
-const minutes = futureDate.getMinutes();
-// Extracting month index
+
+// Month
 let month = futureDate.getMonth();
+month = months[month];
 console.log(month);
+
+// Hours
+const hours = futureDate.getHours();
+
+// Minutes
+const minutes = futureDate.getMinutes();
 
 // Displaying the dynamic date
 giveaway.textContent = `giveaway ends on ${year} ${hours}:${minutes}`;
