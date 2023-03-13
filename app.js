@@ -45,4 +45,4 @@ const hours = futureDate.getHours();
 const minutes = futureDate.getMinutes();
 
 // Displaying the dynamic date
-giveaway.textContent = `giveaway ends on ${year} ${hours}:${minutes}`;
+giveaway.textContent = `giveaway ends on ${month} ${year} ${hours}:${minutes}`;
