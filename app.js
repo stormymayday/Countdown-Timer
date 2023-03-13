@@ -41,9 +41,7 @@ month = months[month];
 let dayNumber = futureDate.getDate();
 
 // Week Day
-let weekDay = futureDate.getDay();
-weekDay = weekdays[weekDay];
-console.log(weekDay);
+let weekDay = weekdays[futureDate.getDay()];
 
 // Hours
 const hours = futureDate.getHours();
