@@ -35,4 +35,4 @@ const year = futureDate.getFullYear();
 const hours = futureDate.getHours();
 console.log(hours);
 // Displaying the dynamic date
-giveaway.textContent = `giveaway ends on ${year}`;
+giveaway.textContent = `giveaway ends on ${year} ${hours}`;
