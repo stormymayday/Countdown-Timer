@@ -42,6 +42,7 @@ let dayNumber = futureDate.getDate();
 
 // Week Day
 let weekDay = futureDate.getDay();
+weekDay = weekdays[weekDay];
 console.log(weekDay);
 
 // Hours
