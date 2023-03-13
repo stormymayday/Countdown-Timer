@@ -33,6 +33,8 @@ let futureDate = new Date(2020, 4, 24, 11, 30, 0);
 const year = futureDate.getFullYear();
 // Extracting hours
 const hours = futureDate.getHours();
-console.log(hours);
+// Extracting minutes
+const minutes = futureDate.getMinutes();
+console.log(minutes);
 // Displaying the dynamic date
 giveaway.textContent = `giveaway ends on ${year} ${hours}`;
