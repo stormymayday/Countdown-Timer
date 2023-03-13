@@ -36,7 +36,10 @@ const year = futureDate.getFullYear();
 // Month
 let month = futureDate.getMonth();
 month = months[month];
-console.log(month);
+
+// Day Number
+let dayNumber = futureDate.getDate();
+console.log(dayNumber);
 
 // Hours
 const hours = futureDate.getHours();
