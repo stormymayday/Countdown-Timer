@@ -24,4 +24,5 @@ const weekdays = [
 ];
 
 const giveaway = document.querySelector('.giveaway');
-console.log(giveaway);
+const deadline = document.querySelector('.deadline');
+console.log(deadline);
