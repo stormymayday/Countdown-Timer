@@ -28,7 +28,7 @@ const deadline = document.querySelector('.deadline');
 const items = document.querySelectorAll('.deadline-format h4');
 
 // Assigning the date
-let futureDate = new Date(2020, 4, 24, 11, 30, 0);
+let futureDate = new Date(2023, 4, 24, 11, 30, 0);
 
 // Year
 const year = futureDate.getFullYear();
@@ -59,7 +59,7 @@ console.log(futureTime);
 function getRemainingTime() {
 
     const today = new Date().getTime();
-    console.log(today);
+    console.log(today)
 
 }
 
