@@ -73,6 +73,10 @@ function getRemainingTime() {
     const msInOneHour = 60 * 60 * 1000;
     console.log(msInOneHour);
 
+    // Number of milliseconds in one minute
+    const msInOneMinute = 60 * 1000;
+    console.log(msInOneMinute);
+
 }
 
 getRemainingTime();
