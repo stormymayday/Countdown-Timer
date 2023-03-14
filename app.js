@@ -77,7 +77,7 @@ function getRemainingTime() {
     const msInOneMinute = 60 * 1000;
 
     // Calculating number of days remaining
-    let daysRemaining = difference / msInOneDay;
+    let daysRemaining = Math.floor(difference / msInOneDay);
     console.log(daysRemaining);
 
 }
