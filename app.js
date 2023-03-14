@@ -61,14 +61,17 @@ function getRemainingTime() {
 
     const difference = futureDate - today;
 
-    // 1 s = 1000 ms
-    // 1 m = 60 s
+    // 1 sec = 1000 ms
+    // 1 min = 60 sec
     // 1 hr = 60 min
-    // 1 d = 24 hr
+    // 1 day = 24 hr
 
-    // number of milliseconds in one day
-    const millisecondsInOneDay = 24 * 60 * 60 * 1000;
-    console.log(millisecondsInOneDay);
+    // Number of milliseconds in one day
+    const msInOneDay = 24 * 60 * 60 * 1000;
+
+    // Number of milliseconds in one hour
+    const msInOneHour = 60 * 60 * 1000;
+    console.log(msInOneHour);
 
 }
 
