@@ -51,3 +51,7 @@ const minutes = futureDate.getMinutes();
 
 // Displaying the dynamic date
 giveaway.textContent = `giveaway ends on ${weekDay}, ${dayNumber} ${month} ${year} ${hours}:${minutes}`;
+
+// Future time in miliseconds
+const futureTime = futureDate.getTime();
+console.log(futureTime);
