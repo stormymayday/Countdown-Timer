@@ -28,7 +28,7 @@ const deadline = document.querySelector('.deadline');
 const items = document.querySelectorAll('.deadline-format h4');
 
 // Assigning the date
-let futureDate = new Date(2023, 4, 24, 11, 30, 0);
+let futureDate = new Date(2023, 4, 24, 15, 30, 0);
 
 // Year
 const year = futureDate.getFullYear();
@@ -76,9 +76,12 @@ function getRemainingTime() {
     // Number of milliseconds in one minute
     const msInOneMinute = 60 * 1000;
 
-    // Calculating number of days remaining
+    // Calculating the number of days remaining
     let daysRemaining = Math.floor(difference / msInOneDay);
-    console.log(daysRemaining);
+
+    // Calculating the number of hours remaining
+    let hoursRemaining = Math.floor((difference % msInOneDay) / msInOneHour);
+    console.log(hoursRemaining);
 
 }
 
