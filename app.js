@@ -55,3 +55,12 @@ giveaway.textContent = `giveaway ends on ${weekDay}, ${dayNumber} ${month} ${yea
 // Future time in miliseconds
 const futureTime = futureDate.getTime();
 console.log(futureTime);
+
+function getRemainingTime() {
+
+    const today = new Date().getTime();
+    console.log(today);
+
+}
+
+getRemainingTime();
