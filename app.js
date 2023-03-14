@@ -52,7 +52,7 @@ const minutes = futureDate.getMinutes();
 // Displaying the dynamic date
 giveaway.textContent = `giveaway ends on ${weekDay}, ${dayNumber} ${month} ${year} ${hours}:${minutes}`;
 
-// Future time in miliseconds
+// Future time in milliseconds
 const futureTime = futureDate.getTime();
 
 function getRemainingTime() {
@@ -60,7 +60,15 @@ function getRemainingTime() {
     const today = new Date().getTime();
 
     const difference = futureDate - today;
-    console.log(difference);
+
+    // 1 s = 1000 ms
+    // 1 m = 60 s
+    // 1 hr = 60 min
+    // 1 d = 24 hr
+
+    // number of milliseconds in one day
+    const millisecondsInOneDay = 24 * 60 * 60 * 1000;
+    console.log(millisecondsInOneDay);
 
 }
 
