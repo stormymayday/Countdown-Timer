@@ -81,7 +81,10 @@ function getRemainingTime() {
 
     // Calculating the number of hours remaining
     let hoursRemaining = Math.floor((difference % msInOneDay) / msInOneHour);
-    console.log(hoursRemaining);
+
+    // Calculating the number of minutes remaining
+    let minutesRemaining = Math.floor((difference % msInOneHour) / msInOneMinute);
+    console.log(minutesRemaining);
 
 }
 
