@@ -96,6 +96,7 @@ function getRemainingTime() {
         if (item < 10) {
             return item = `0${item}`;
         }
+        return item;
     }
 
     // Iterating through the items nodeList and assigning values array items
