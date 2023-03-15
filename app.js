@@ -108,7 +108,7 @@ function getRemainingTime() {
 
 }
 
-// countdown
+// Calling the 'getRemainingTime' every second
 let countdown = setInterval(getRemainingTime, 1000);
 
 getRemainingTime();
