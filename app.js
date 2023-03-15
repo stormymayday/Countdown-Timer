@@ -89,7 +89,6 @@ function getRemainingTime() {
 
     // Values array
     const values = [daysRemaining, hoursRemaining, minutesRemaining, secondsRemaining];
-    console.log(values);
 
     // Format function that adds leading 0 if item is less that 10
     function format(item) {
