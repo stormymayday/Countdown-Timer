@@ -91,6 +91,13 @@ function getRemainingTime() {
     const values = [daysRemaining, hoursRemaining, minutesRemaining, secondsRemaining];
     console.log(values);
 
+    // Format function that adds leading 0 if item is less that 10
+    function format(item) {
+        if (item < 10) {
+            return item = `0${item}`;
+        }
+    }
+
     // Iterating through the items nodeList and assigning values array items
     items.forEach(function (item, index) {
 
