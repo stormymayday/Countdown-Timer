@@ -95,7 +95,7 @@ function getRemainingTime() {
     // Values array
     const values = [daysRemaining, hoursRemaining, minutesRemaining, secondsRemaining];
 
-    // Format function that adds leading 0 if item is less that 10
+    // Format function that adds leading 0 if item is less than 10
     function format(item) {
         if (item < 10) {
             return item = `0${item}`;
@@ -110,7 +110,7 @@ function getRemainingTime() {
 
     });
 
-    // Edge Case: When curren time (today) is greater that futureDate
+    // Edge Case: When current time (today) is greater than futureDate
     if (difference < 0) {
 
         clearInterval(countdown);
