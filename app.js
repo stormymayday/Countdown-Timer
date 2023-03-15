@@ -102,7 +102,7 @@ function getRemainingTime() {
     // Iterating through the items nodeList and assigning values array items
     items.forEach(function (item, index) {
 
-        item.innerHTML = values[index];
+        item.innerHTML = format(values[index]);
 
     });
 
