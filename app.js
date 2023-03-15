@@ -105,6 +105,14 @@ function getRemainingTime() {
 
     });
 
+    // Edge Case: When curren time (today) is greater that futureDate
+    if (difference < 0) {
+
+        clearInterval(countdown);
+
+        deadline.innerHTML = `<h4 class='expired'>Sorry, this giveaway has expired</h4>`;
+
+    }
 
 }
 
