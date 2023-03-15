@@ -27,8 +27,13 @@ const giveaway = document.querySelector('.giveaway');
 const deadline = document.querySelector('.deadline');
 const items = document.querySelectorAll('.deadline-format h4');
 
-// Assigning the date
-let futureDate = new Date(2023, 4, 24, 15, 30, 0);
+let tempDate = new Date();
+let tempYear = tempDate.getFullYear();
+let tempMonth = tempDate.getMonth();
+let tempDay = tempDate.getDate();
+
+// Assigning the future date (10 days from today)
+const futureDate = new Date(tempYear, tempMonth, tempDay + 10, 11, 30, 0);
 
 // Year
 const year = futureDate.getFullYear();
