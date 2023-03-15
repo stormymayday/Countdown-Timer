@@ -91,6 +91,14 @@ function getRemainingTime() {
     const values = [daysRemaining, hoursRemaining, minutesRemaining, secondsRemaining];
     console.log(values);
 
+    // Iterating through the items nodeList and assigning values array items
+    items.forEach(function (item, index) {
+
+        item.innerHTML = values[index];
+
+    });
+
+
 }
 
 getRemainingTime();
