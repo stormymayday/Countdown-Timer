@@ -71,7 +71,6 @@ function getRemainingTime() {
 
     // Number of milliseconds in one hour
     const msInOneHour = 60 * 60 * 1000;
-    console.log(msInOneHour);
 
     // Number of milliseconds in one minute
     const msInOneMinute = 60 * 1000;
@@ -89,7 +88,8 @@ function getRemainingTime() {
     let secondsRemaining = Math.floor((difference % msInOneMinute) / 1000);
 
     // Values array
-    const values = [days, hours, minutes, seconds];
+    const values = [daysRemaining, hoursRemaining, minutesRemaining, secondsRemaining];
+    console.log(values);
 
 }
 
